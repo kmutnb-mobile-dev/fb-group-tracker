@@ -1,0 +1,12 @@
+<h1>{{tagName}}</h1>
+
+
+
+<div ng-if="noData">ไม่มีข้อมูล</div>
+<div ng-if="loading">
+	<img src="img/ajax-loader.gif" alt="">
+</div>
+
+<div ng-repeat="msg in messages">
+	{{msg.message}}
+</div>
